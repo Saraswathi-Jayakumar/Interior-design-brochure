@@ -1,0 +1,561 @@
+ody {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: rgb(151, 150, 150);
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  background-color: rgb(151, 150, 150);
+  position: relative;
+}
+#navBar {
+  width: 99%;
+  height: min-content;
+  background-color: rgb(38, 39, 39);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(248, 247, 247, 0.918);
+  margin-top: 2px;
+}
+#navBar .logo {
+  width: 30%;
+}
+#navBar .logo img {
+  width: 100px;
+  height: 45px;
+  border: 2px solid rgba(245, 247, 248, 0.918);
+  border-radius: 50%;
+  margin: 10px;
+}
+#navBar #Items ul {
+  width: 70%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#navBar #Items ul li {
+  list-style: none;
+}
+#navBar #Items ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.6rem;
+  display: block;
+  font-size: 11px;
+  font-family: sans-serif;
+}
+#navBar #Items ul li:hover {
+  border: 1px solid #fff;
+  background-color: rgb(24, 138, 138);
+  transition: 0.6s ease;
+}
+#navBar #Menu {
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+}
+#navBar #Menu .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+@media (max-width: 520px) {
+  #navBar #Menu {
+    display: flex;
+  }
+  #navBar #Items {
+    display: none;
+    width: 100%;
+  }
+  #navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #navBar #Items ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  #navBar #Items ul li {
+    text-align: center;
+  }
+  #navBar #Items ul li a {
+    padding: 0.5rem 1rem;
+  }
+  #navBar #Items.active {
+    display: flex;
+  }
+}
+.Container #Image {
+  width: 99%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Container #Image img {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid rgba(248, 247, 247, 0.918);
+}
+.Container #Image #mission {
+  width: 50%;
+  display: flex;
+  font-size: 27px;
+  font-family: segoe UI;
+  font-weight: 1000;
+  position: absolute;
+  margin-top: 5px;
+  padding: 8px;
+  justify-content: center;
+  color: rgb(37, 37, 37);
+}
+.Container #section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  width: 80%;
+  height: fit-content;
+  background-color: rgb(38, 39, 39);
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid rgba(248, 247, 247, 0.918);
+}
+.Container #section #about {
+  width: 40%;
+  height: min-content;
+  font-family: cursive;
+  font-size: 12px;
+  color: rgb(247, 248, 248);
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Container #section #about h1 {
+  color: rgb(248, 231, 187);
+}
+.Container #section #aboutImage {
+  width: 49%;
+  height: 40vh;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid snow;
+}
+.Container #section #aboutImage img {
+  width: 100%;
+  height: 40vh;
+}
+.Container #section2 {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 95%;
+  height: fit-content;
+  background-color: rgb(38, 39, 39);
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  font-family: cursive;
+  font-size: 12px;
+  color: rgb(247, 248, 248);
+  border: 1px solid rgba(248, 247, 247, 0.918);
+}
+.Container #section2 #Services {
+  width: 95%;
+  height: fit-content;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+.Container #section2 #Services h1 {
+  color: rgb(248, 231, 187);
+}
+.Container #section2 #Services #won {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+  justify-content: center;
+}
+.Container #section2 #Services #won div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(73, 73, 73);
+  padding: 2px;
+  color: rgb(38, 39, 39);
+  text-align: center;
+  border: 1.8px solid rgb(243, 243, 243);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+}
+.Container #section2 #Services #won div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.25em solid rgb(108, 111, 112);
+}
+.Container #section2 #Services #won div hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(7, 2, 2);
+  border-left: 1px solid rgb(7, 2, 2);
+  border-right: 1px solid rgb(7, 2, 2);
+}
+.Container #section2 #Services #won div p span {
+  color: rgb(253, 253, 253);
+  font-size: 23px;
+  font-family: Arial;
+}
+.Container #section2 #Services #won div p {
+  color: rgb(202, 202, 204);
+  font-size: 11px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.Container #section2 #service2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  height: fit-content;
+  padding: 4px;
+  column-gap: 5px;
+  justify-content: center;
+  background-color: rgba(20, 20, 20, 0.624);
+  box-shadow: 1px 1px 2px 1px rgba(31, 37, 37, 0.823);
+}
+.Container #section2 #service2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.Container #section2 #service2 p {
+  color: rgb(248, 231, 187);
+  font-size: 11px;
+  text-align: center;
+}
+.Container #section2 #service2 #img {
+  width: 75%;
+  height: 15vh;
+  border-radius: 50%;
+}
+.Container #section2 #service2 img {
+  width: 100%;
+  height: 15vh;
+  border: 1px solid rgb(186, 203, 214);
+  border-radius: 50%;
+}
+.Container #section3 {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 80%;
+  height: min-content;
+  background-color: rgb(38, 39, 39);
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  font-family: cursive;
+  font-size: 12px;
+  color: rgb(247, 248, 248);
+  border: 1px solid rgba(248, 247, 247, 0.918);
+}
+.Container #section3 #ProjectHead {
+  margin: 0px;
+}
+.Container #section3 h1 {
+  color: rgb(248, 231, 187);
+}
+.Container #section3 #ProHead {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2px;
+  width: fit-content;
+  justify-content: center;
+}
+.Container #section3 #ProHead div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: fit-content;
+  height: 210px;
+  background-color: azure;
+  color: rgb(38, 39, 39);
+  padding: 2px;
+  font-size: 10px;
+}
+.Container #section3 #ProHead div h3 {
+  margin-left: 5px;
+}
+.Container #section3 #ProHead div button {
+  width: fit-content;
+  border: none;
+  border-radius: 9px;
+  background-color: rgb(38, 39, 39);
+  color: white;
+  font-size: 13px;
+  font-family: cursive;
+  margin-left: 13px;
+  cursor: pointer;
+}
+.Container #section3 #Project2 {
+  display: flex;
+  flex-direction: row;
+  width: 77%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(38, 39, 39, 0.049);
+  box-shadow: 1px 1px 4px 1px rgba(31, 37, 37, 0.823);
+}
+.Container #section3 #Project2 #proImg {
+  position: relative;
+  width: 95%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+.Container #section3 #Project2 #proImg img {
+  width: 95%;
+  height: 50vh;
+  animation: anime 6s ease-in infinite;
+}
+@keyframes anime {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scaleY(1.2);
+  }
+}
+.Container #section3 #Project2 #proImg div {
+  position: absolute;
+  margin-top: 5px;
+  padding: 3px;
+  color: rgb(250, 246, 246);
+  font-family: sans-serif;
+  background-color: rgb(48, 48, 47);
+  border-radius: 25%;
+  padding: 4px;
+  border: 1px solid rgb(249, 250, 249);
+  z-index: 1;
+}
+.Container #section3 #Project2 #left,
+#right {
+  font-size: 40px;
+  font-family: monospace;
+  background-color: rgba(17, 17, 17, 0.2);
+  cursor: pointer;
+}
+.Container #section4 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-family: cursive;
+  font-size: 12px;
+  color: rgb(247, 248, 248);
+  border: 1px solid rgba(248, 247, 247, 0.918);
+  background-image: url("Images/TestimonialImages/testimonialBG.jpg");
+  background-size: 150%;
+}
+.Container #section4 {
+  color: rgb(248, 231, 187);
+}
+.Container #section4 #TestimonialText,
+#TestimonialName,
+#caption {
+  width: 55%;
+  height: min-content;
+  text-align: center;
+  background-color: rgba(174, 216, 247, 0.2);
+  color: rgb(252, 252, 252);
+  padding: 33px;
+  font-size: 13px;
+  margin: 10px;
+}
+.Container #section4 #TestimonialName,
+#caption {
+  margin-top: -33px;
+  font-size: 16px;
+  height: fit-content;
+  background-color: none;
+}
+.Container #section4 #TestimonialName {
+  text-align: right;
+  font-size: 15px;
+  font-style: oblique;
+  color: rgb(202, 196, 10);
+}
+.Container #section4 #caption .circle {
+  height: fit-content;
+  display: inline-block;
+  padding: 2px;
+  cursor: pointer;
+  color: rgb(22, 22, 22);
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.9s ease-in;
+}
+.Container #section4 #caption .active {
+  color: white;
+}
+.Container #Contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(38, 39, 39);
+  width: 45%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 9px;
+  color: rgb(38, 39, 39);
+  padding: 4px;
+  border: 1px solid rgba(248, 247, 247, 0.918);
+}
+.Container #Contact h1 {
+  color: rgb(248, 231, 187);
+}
+.Container #Contact #contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.Container #Contact #contactInfo #Visit,
+#Message,
+#Call,
+#socialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: fit-content;
+  background-color: azure;
+  padding: 5px;
+  height: fit-content;
+}
+.Container #Contact #contactInfo hr {
+  width: 100px;
+  background-color: rgb(78, 74, 74);
+  height: 2px;
+  border-bottom: 1px solid rgb(7, 2, 2);
+  border-left: 1px solid rgb(7, 2, 2);
+  border-right: 1px solid rgb(7, 2, 2);
+}
+.Container #Contact #contactInfo #Visit #locationImage {
+  width: fit-content;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.Container #Contact #contactInfo #Visit #locationImage img {
+  width: 25px;
+  height: 25px;
+}
+.Container #Contact #contactInfo #Message #messageImage {
+  width: fit-content;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.Container #Contact #contactInfo #Message #messageImage img {
+  width: 25px;
+  height: 25px;
+}
+.Container #Contact #contactInfo #Call #callImage {
+  width: fit-content;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.Container #Contact #contactInfo #Call #callImage img {
+  width: 25px;
+  height: 25px;
+}
+.Container #Contact #contactInfo #socialMedia {
+  width: fit-content;
+  height: fit-content;
+  background-color: azure;
+  display: inline-block;
+  text-align: center;
+}
+.Container #Contact #contactInfo #socialMedia img {
+  width: 25px;
+  height: 25px;
+}
+.Container #footer {
+  width: 95%;
+  position: fixed;
+  margin-top: 111%;
+}
+.Container #footer #top {
+  background-color: rgb(78, 74, 74);
+  float: right;
+  border-radius: 10px;
+  font-size: 10px;
+  padding: 5px;
+  font-family: cursive;
+  text-decoration: none;
+}
+.Container #footer #top a {
+  text-decoration: none;
+  color: white;
+}
+#link {
+  text-decoration: none;
+  float: right;
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 10px;
+  background-color: rgb(78, 74, 74);
+  border-radius: 10px;
+  margin: 10px;
+  font-family: cursive;
+}
