@@ -52,7 +52,7 @@ var captionBox=document.getElementById("captionBox");
 
 var i=0;
 
-time=2000;
+time=4000;
 
 // declaring variables of setInterval function
 
@@ -157,8 +157,6 @@ function reset(){
 // displaying the next image in the particular image gallery
 
 var k = 0;
-
-var view = document.getElementsByClassName("view");
 
 var rightBut=document.getElementById("right");
 
@@ -274,10 +272,11 @@ resView.addEventListener('click', ResView);
 
 function ResView(){
 
+    reset();
+
     clicked.pop();
     clicked.push("Residential");
 
-    reset();
     i=0;
     captionBox.innerHTML=i+1+"/"+resImages.length;
     imageContainer.src=resImages[i];
@@ -301,10 +300,11 @@ comView.addEventListener('click', ComView);
 
 function ComView(){
 
+    reset();
+
     clicked.pop();
     clicked.push("Commercial");
 
-    reset();
     i=0;
     captionBox.innerHTML=i+1+"/"+comImages.length;
     imageContainer.src=comImages[i];
@@ -328,10 +328,11 @@ otherView.addEventListener('click', OtherView);
 
 function OtherView(){
 
+    reset();
+
     clicked.pop();
     clicked.push("Others");
 
-    reset();
     i=0;
     captionBox.innerHTML=i+1+"/"+otherImages.length;
     imageContainer.src=otherImages[i];

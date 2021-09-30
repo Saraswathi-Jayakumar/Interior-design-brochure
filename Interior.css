@@ -349,14 +349,14 @@ body {
 .Container #section3 #Project2 #proImg img {
   width: 95%;
   height: 50vh;
-  animation: anime 6s ease-in infinite;
+  animation: anime 4s ease-in infinite;
 }
 @keyframes anime {
   from {
-    transform: scale(0.9);
+    transform: scale(1);
   }
   to {
-    transform: scaleY(1.1);
+    transform: scaleY(1.2);
   }
 }
 .Container #section3 #Project2 #proImg div {
